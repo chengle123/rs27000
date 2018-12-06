@@ -1,0 +1,21 @@
+<view class="">
+    <wux-wing-blank size="large">
+        <wux-gallery id="wux-gallery" />
+        <view class="weui-cells__title">2018-02-02</view>
+        <wux-row>
+            <wux-col span="12">
+                <p class="content">
+                    由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。
+                </p>
+            </wux-col>
+        </wux-row>
+        <wux-white-space />
+        <wux-row>
+            <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                <wux-col span="4" bindtap="showGallery2" data-current="{{ index }}">
+                    <image class="weui-uploader__img" src="{{ item }}" />
+                </wux-col>
+            </block>
+        </wux-row>
+    </wux-wing-blank>
+</view>

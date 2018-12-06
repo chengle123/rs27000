@@ -1,0 +1,17 @@
+
+.weui-cells__title{
+    color:#999;
+    margin:0 0 5px 10px;
+    font-size: 14px;
+}
+.weui-uploader__img{
+    width:100%;
+    height:100px;
+}
+.weuiImg{
+    width:100%;
+    height:100%;
+}
+.contnet{
+    padding-bottom:40px;
+}

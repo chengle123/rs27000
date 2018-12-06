@@ -1,0 +1,38 @@
+<view class="contnet">
+    <wux-floating-button position="{{ position }}" theme="{{ 'assertive' }}" buttons="{{ buttons }}" bind:click="onClick" />
+    <wux-wing-blank size="large">
+        <view wx:if="{{selectIndex===0}}">
+            <wux-media wx:for-items="{{ urls }}" wx:key="{{ index }}" thumb="{{ item }}" bindtap="selectItem" title="2018-02-02" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
+        </view>
+        <view wx:if="{{selectIndex===1}}">
+            <wux-gallery id="wux-gallery" />
+            <view class="weui-cells__title">2018-02-02</view>
+            <wux-row>
+                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                    <wux-col span="4" bindtap="showGallery2" data-current="{{ index }}">
+                        <image class="weui-uploader__img" src="{{ item }}" />
+                    </wux-col>
+                </block>
+            </wux-row>
+        </view>
+        <view wx:if="{{selectIndex===2}}">
+            <image class="weuiImg" src="{{ urls[4] }}" />
+        </view>
+    </wux-wing-blank>
+</view>
+<!--<view class="">
+    <wux-tabbar default-current="0" theme="assertive" position="bottom" bindchange="tabChange">
+        <wux-tabbar-item title="首页">
+            <wux-icon wux-class="icon" type="md-outlet" size="20" slot="icon-on" />
+            <wux-icon wux-class="icon" type="md-outlet" size="20" slot="icon-off" />
+        </wux-tabbar-item>
+        <wux-tabbar-item title="记录">
+            <wux-icon wux-class="icon" type="md-create" size="20" slot="icon-on" />
+            <wux-icon wux-class="icon" type="md-create" size="20" slot="icon-off" />
+        </wux-tabbar-item>
+        <wux-tabbar-item title="我的">
+            <wux-icon wux-class="icon" type="md-finger-print" size="20" slot="icon-on" />
+            <wux-icon wux-class="icon" type="md-finger-print" size="20" slot="icon-off" />
+        </wux-tabbar-item>
+    </wux-tabbar>
+</view>-->

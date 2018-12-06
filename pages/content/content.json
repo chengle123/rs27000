@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "wux-wing-blank": "../../dist/wing-blank/index",
+        "wux-row": "../../dist/row/index",
+        "wux-col": "../../dist/col/index",
+        "wux-gallery": "../../dist/gallery/index",
+        "wux-media": "../../dist/media/index",
+        "wux-white-space": "../../dist/white-space/index"
+    }
+}

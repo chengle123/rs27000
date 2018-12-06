@@ -1,0 +1,44 @@
+<view class="contnet">
+    <wux-wing-blank size="large">
+        <wux-row>
+            <wux-col span="12">
+                <wux-cell-group>
+                    <wux-cell hover-class="none">
+                        <wux-textarea rows="3" placeholder="内容..." />
+                    </wux-cell>
+                </wux-cell-group>
+                <wux-white-space />
+                <wux-cell-group>
+                    <wux-calendar id="wux-calendar" />
+                    <wux-cell title="时间" extra="{{ time }}" bind:click="openCalendar1"></wux-cell>
+                </wux-cell-group>
+                <wux-white-space />
+                <wux-upload listType="picture-card" max="9" sourceType="album" sizeType="original" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+                    <image src="{{ imageUrl }}" wx:if="{{ imageUrl }}" />
+                    <text wx:else>上传</text>
+                </wux-upload>
+            </wux-col>
+        </wux-row>
+        <wux-row>
+            <wux-col span="12">
+                <wux-button block loading="{{ queryLoading }}" type="balanced" bindtap="query">保存</wux-button>
+            </wux-col>
+        </wux-row>
+    </wux-wing-blank>
+</view>
+<!--<view class="">
+    <wux-tabbar default-current="1" theme="assertive" position="bottom" bindchange="tabChange">
+        <wux-tabbar-item title="首页">
+            <wux-icon wux-class="icon" type="md-outlet" size="20" slot="icon-on" />
+            <wux-icon wux-class="icon" type="md-outlet" size="20" slot="icon-off" />
+        </wux-tabbar-item>
+        <wux-tabbar-item title="记录">
+            <wux-icon wux-class="icon" type="md-create" size="20" slot="icon-on" />
+            <wux-icon wux-class="icon" type="md-create" size="20" slot="icon-off" />
+        </wux-tabbar-item>
+        <wux-tabbar-item title="我的">
+            <wux-icon wux-class="icon" type="md-finger-print" size="20" slot="icon-on" />
+            <wux-icon wux-class="icon" type="md-finger-print" size="20" slot="icon-off" />
+        </wux-tabbar-item>
+    </wux-tabbar>
+</view>-->
